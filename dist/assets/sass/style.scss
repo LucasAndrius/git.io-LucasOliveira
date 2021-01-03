@@ -1,0 +1,39 @@
+@import 'reset.scss';
+@import 'menu.scss';
+@import 'about.scss';
+@import 'accordion.scss';
+@import 'projects.scss';
+
+
+
+#receiverProjects{
+   height:70px;
+}
+
+.toUp{
+    height:32px;
+    width:32px;
+    background-image: url('../images/icons/double-up-arrow.svg');
+    background-size: cover;
+    position: fixed;
+    right:10px;
+    bottom:10px;
+    behavior: smooth;
+    &:hover{
+        height:46px;
+        width:46px;
+        transition: all ease 0.6s;
+    }
+}
+
+.footer{
+    height:50px;
+    width:100%;
+    background-color: #000;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:13px;
+    color:#cccaca;
+}
+

@@ -1,0 +1,208 @@
+
+
+.about{
+    padding-top:50px;
+    height:100vh ;
+    background: linear-gradient(-50deg,#ffc0c2,#ffc0c2,#ffc0c2,#6dbbc9,#6dbbc9,);
+    padding-bottom:50px;
+
+    
+    .bg-about{
+        width:90vw;
+        height: 80vh;
+        margin:auto;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        background-color:#ccc;
+        border-radius: 20px;
+        
+    }
+    .about-div{
+        background-color: rgba(#f7e9e3, 0.2);
+        width:50%;
+        margin:40px;
+        border-radius: 10px;
+        
+        .about-text{
+            margin:30px;
+            border-left: 1px solid #0e3150;
+            
+            
+
+                .title-tell{
+                    padding-left:20px;
+                    
+                }
+                .discreption-tell{
+                    padding-left:20px;
+                }
+                .text__tell{
+                    padding-top: 10px;
+                    padding-left: 40px;
+                }
+            }
+        &:hover{
+            background-color: rgba(#f7e9e3, 0.9);
+            transition:all ease 0.9s;
+        }
+    }
+
+    
+
+    .about-links{
+        background-color: rgba(#f7e9e3, 0.1);
+        width:50%;
+        margin:40px;
+        border-radius: 10px;
+        
+        .links{
+            margin:30px;
+            border-left: 1px solid  #0e3150;
+            padding-left:10px;
+            .links__itens{
+                display: flex;
+                flex-direction: column;
+                a{
+                    padding-top: 10px;
+                    text-decoration: none;
+                    color: #000;
+                    &:hover{
+                        color:rgb(5, 168, 100);
+                    }
+                }
+            }
+            
+        }
+        &:hover{
+            background-color: rgba(#f7e9e3, 0.8);
+            transition:all ease 0.9s;
+        }
+    }
+}
+
+
+.bg--image{
+    height:100vw;
+    width:100vw;
+    background-image: url('../images/bg/bgAbout2.jpg');
+    background-position: bottom ;
+    background-size: cover;
+    box-shadow: 1px 2px 3px 2px#0e3150;
+}
+
+@media (min-width:449px) and (max-width:800px){
+
+    .hide-on-mobile{
+        display:none;
+    }
+    .about{
+        padding-top:0px;
+        
+        .bg-about{
+            width:100vw;
+            height: 100vh;
+            margin:auto;
+            display:flex;
+            flex-wrap: wrap;
+            overflow: hidden;
+            
+        }
+        .about-div{
+            width:80vw;
+            margin-top: -30px;
+            background-color: rgba(255, 255, 255, 0.7);
+            .about-text{
+                .title-tell{
+                    font-size: 38px;
+    
+                }
+                .discreption-tell{
+                    font-size: 18px;
+                }
+                .text__tell{
+                    font-size: 24px;
+                }
+            }
+            &:hover{
+                background-color: rgba(255, 255, 255, 0.8);
+                transition:all ease 0.9s;
+            }
+        }
+    
+        
+    
+        .about-links{
+            margin-top: -100px;
+            width:70vw;
+            background-color: rgba(255, 255, 255, 0.7);
+            
+            .links{
+                font-size:28px
+            }
+            .links__itens{
+                font-size:28px;
+                
+            }
+            
+        }
+    }
+    
+}
+
+
+@media (max-width:449px){
+    .hide-on-mobile{
+        display:none;
+    }
+    
+.about{
+    height: 80vh;
+    padding-top:0px;
+    background-color: #fff;
+    .bg-about{
+        width:100vw;
+        display:flex;
+        flex-wrap: wrap;
+        
+    }
+    .about-div{
+        background-color: rgba(255, 255, 255, 0.8);
+        width:100vw;
+        border-radius: 10px;
+        margin:8px;
+        
+        .about-text{
+            margin:5px;
+            
+
+                .title-tell{
+                    display:none;
+                }
+                .discreption-tell{
+                    font-size:17px;
+                }
+                .text__tell{
+                    font-size:20px;
+                }
+            }
+        
+    }
+
+    
+
+    .about-links{
+        background-color: rgba(255, 255, 255, 0.8);
+        width:100vw;
+        margin:8px;
+        
+        
+            .links__itens{
+                font-size: 17px;
+                
+            }
+            
+        }
+        
+    }
+}
