@@ -1,16 +1,3 @@
-
-function openMenu() {
-    let menuSelected = document.querySelector('.menu-list');
-    if (menuSelected.classList.contains('opacity')==true){
-        menuSelected.classList.remove('opacity');
-    } else {
-        menuSelected.classList.add('opacity');
-    }
-}
-
-
-
-
 function scrollTo(element){
     document.querySelector(element).scrollIntoView({behavior:'smooth'});
 }
@@ -25,18 +12,14 @@ document.querySelector('#menuCurrent').addEventListener('click', function(event)
     event.preventDefault();
     scrollTo('#receiverToHome');
 })
-
-
 document.querySelector('#skills').addEventListener('click', function(event){
     event.preventDefault();
-    scrollTo('#receiverSkills');
+    scrollTo('#receiverskills');
 })
 document.querySelector('#projects').addEventListener('click', function(event){
     event.preventDefault();
     scrollTo('#receiverProjects');
 })
-
-
 
 
 

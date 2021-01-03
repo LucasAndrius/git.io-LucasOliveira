@@ -66,6 +66,19 @@ $color_cloud: #eaeaea;
 }
 
 
+.resetLink{
+  margin-top: 10px;
+  padding:10px;
+  background-color: #000;
+  text-decoration:none;
+  color:rgb(252, 240, 248);
+  &:hover{
+    color:rgb(227, 194, 245);
+  }
+}
+
+
+
 
 
 .accordion {
@@ -255,7 +268,7 @@ $color_cloud: #eaeaea;
 }
 
 .hard-bg-color-content{
-  background-color: #f7e9e3;
+  background-color: #ffc0c2;
   color:#df9597;
 }
 
@@ -278,7 +291,7 @@ $color_cloud: #eaeaea;
 }
 
 .hard-bg-color-tab{
-  background-color: #f7e9e3;
+  background-color: #ffc0c2;
   color:#df9597;
 }
 
