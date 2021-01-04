@@ -11,6 +11,7 @@
 }
 
 .toUp{
+    animation: is-bouncing 2.5s ease-in  alternate infinite;
     height:32px;
     width:32px;
     background-image: url('../images/icons/double-up-arrow.svg');
@@ -18,11 +19,12 @@
     position: fixed;
     right:10px;
     bottom:10px;
-    behavior: smooth;
+    transition: all ease 0.6s;
     &:hover{
         height:46px;
         width:46px;
-        transition: all ease 0.6s;
+        animation: paused;
+        
     }
 }
 
@@ -36,3 +38,22 @@
     color:#cccaca;
 }
 
+@media (max-width:449px){
+    .toUp{
+
+        height:40px;
+        width:40px;
+        transition: all ease 0.6s;
+        &:hover{
+            height:40px;
+            width:40px;
+        }
+        
+    }
+}
+
+@keyframes is-bouncing {
+    to{
+        transform: translateY(-30px);
+    }
+}
