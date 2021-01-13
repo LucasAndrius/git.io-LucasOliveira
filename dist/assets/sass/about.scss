@@ -64,16 +64,13 @@
                     text-decoration: none;
                     color: #000;
                     &:hover{
-                        color:rgb(5, 168, 100);
+                        color:rgb(28, 132, 202);
                     }
                 }
             }
             
         }
-        &:hover{
-            background-color: rgba(#f7e9e3, 0.8);
-            transition:all ease 0.9s;
-        }
+       
     }
 }
 
